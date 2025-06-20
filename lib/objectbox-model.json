@@ -1,0 +1,366 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:8823484483872583564",
+      "lastPropertyId": "3:6637337926269234629",
+      "name": "Match",
+      "properties": [
+        {
+          "id": "1:7068007530814462651",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1866504726469463554",
+          "name": "start",
+          "type": 10
+        },
+        {
+          "id": "3:6637337926269234629",
+          "name": "end",
+          "type": 10
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:3201475119944613779",
+          "name": "rrounds",
+          "targetId": "3:8850380683997713648"
+        },
+        {
+          "id": "3:8506586501518462432",
+          "name": "rusers",
+          "targetId": "4:1844088988516406394"
+        }
+      ]
+    },
+    {
+      "id": "2:5799082958551474771",
+      "lastPropertyId": "23:1916505604589242650",
+      "name": "Player",
+      "properties": [
+        {
+          "id": "1:8075854112387216936",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4644923304084604128",
+          "name": "leftBalls",
+          "type": 6
+        },
+        {
+          "id": "3:8180012316877201177",
+          "name": "whiteBalls",
+          "type": 6
+        },
+        {
+          "id": "5:6395767254854043813",
+          "name": "enemyBalls",
+          "type": 6
+        },
+        {
+          "id": "8:7985921073482274135",
+          "name": "randomBalls",
+          "type": 6
+        },
+        {
+          "id": "9:2621559025177809195",
+          "name": "ruserId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:2927373450712375417",
+          "relationTarget": "User"
+        },
+        {
+          "id": "10:8149210944306512497",
+          "name": "win",
+          "type": 1
+        },
+        {
+          "id": "12:5401486008566625118",
+          "name": "startMoveTime",
+          "type": 10
+        },
+        {
+          "id": "13:4315342696714674610",
+          "name": "currentMoveInLine",
+          "type": 6
+        },
+        {
+          "id": "14:7998621858266097080",
+          "name": "moves",
+          "type": 6
+        },
+        {
+          "id": "15:3815692317313391783",
+          "name": "moveScores",
+          "type": 6
+        },
+        {
+          "id": "16:4795826996052213338",
+          "name": "movesInLines",
+          "type": 27
+        },
+        {
+          "id": "17:7423605950409367711",
+          "name": "errorMoves",
+          "type": 6
+        },
+        {
+          "id": "18:2901484206855070669",
+          "name": "loseMoves",
+          "type": 6
+        },
+        {
+          "id": "19:8382464838430087321",
+          "name": "simpleMoves",
+          "type": 6
+        },
+        {
+          "id": "20:3246099946926157507",
+          "name": "scoreMoves",
+          "type": 6
+        },
+        {
+          "id": "21:829091882409044943",
+          "name": "blackBalls",
+          "type": 6
+        },
+        {
+          "id": "22:7130086737777386930",
+          "name": "currentBalls",
+          "type": 6
+        },
+        {
+          "id": "23:1916505604589242650",
+          "name": "moveDurationsInSeconds",
+          "type": 27
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:8850380683997713648",
+      "lastPropertyId": "3:192225978172356198",
+      "name": "Round",
+      "properties": [
+        {
+          "id": "1:723309352357233898",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2113862404194963765",
+          "name": "start",
+          "type": 10
+        },
+        {
+          "id": "3:192225978172356198",
+          "name": "end",
+          "type": 10
+        }
+      ],
+      "relations": [
+        {
+          "id": "2:8452975213217083069",
+          "name": "rplayers",
+          "targetId": "2:5799082958551474771"
+        }
+      ]
+    },
+    {
+      "id": "4:1844088988516406394",
+      "lastPropertyId": "23:4709930221051408544",
+      "name": "User",
+      "properties": [
+        {
+          "id": "1:6014912301216048633",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8436235138743539314",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:4240919488686161265",
+          "name": "whiteBalls",
+          "type": 6
+        },
+        {
+          "id": "5:6676802067475142855",
+          "name": "enemyBalls",
+          "type": 6
+        },
+        {
+          "id": "8:6534135976818461332",
+          "name": "randomBalls",
+          "type": 6
+        },
+        {
+          "id": "9:7914097180419844075",
+          "name": "blackBalls",
+          "type": 6
+        },
+        {
+          "id": "11:5277333744141606055",
+          "name": "currentBalls",
+          "type": 6
+        },
+        {
+          "id": "12:3094527332175618442",
+          "name": "errorMoves",
+          "type": 6
+        },
+        {
+          "id": "13:7077358426971950268",
+          "name": "loseMoves",
+          "type": 6
+        },
+        {
+          "id": "14:2706302984216546123",
+          "name": "simpleMoves",
+          "type": 6
+        },
+        {
+          "id": "15:6802801475002725823",
+          "name": "scoreMoves",
+          "type": 6
+        },
+        {
+          "id": "16:1035745847401764328",
+          "name": "rounds",
+          "type": 6
+        },
+        {
+          "id": "17:8054069373030374586",
+          "name": "roundWins",
+          "type": 6
+        },
+        {
+          "id": "18:6169072092677392469",
+          "name": "roundLoses",
+          "type": 6
+        },
+        {
+          "id": "19:3546414518688401436",
+          "name": "moveScores",
+          "type": 6
+        },
+        {
+          "id": "20:2329278746853728007",
+          "name": "moves",
+          "type": 6
+        },
+        {
+          "id": "22:6280935072645254707",
+          "name": "moveDurationsInSeconds",
+          "type": 27
+        },
+        {
+          "id": "23:4709930221051408544",
+          "name": "movesInLines",
+          "type": 27
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:6930276505038089956",
+      "lastPropertyId": "5:1822519305140696132",
+      "name": "GameState",
+      "properties": [
+        {
+          "id": "1:2931636363696360382",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8799712885672641349",
+          "name": "rcurrentMatchId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "2:6339833616565097545",
+          "relationTarget": "Match"
+        },
+        {
+          "id": "3:3548920613511380075",
+          "name": "rcurrentRoundId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "3:3584177699823624675",
+          "relationTarget": "Round"
+        },
+        {
+          "id": "4:4141130351968983147",
+          "name": "rcurrentPlayerId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "4:2014322154969818487",
+          "relationTarget": "Player"
+        },
+        {
+          "id": "5:1822519305140696132",
+          "name": "gameStatusIndex",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "6:3982585001122521069",
+      "lastPropertyId": "3:1041311771095684919",
+      "name": "Settings",
+      "properties": [
+        {
+          "id": "1:5257803636779872110",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2158243982790154508",
+          "name": "themeModeId",
+          "type": 6
+        },
+        {
+          "id": "3:1041311771095684919",
+          "name": "languageCode",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "6:3982585001122521069",
+  "lastIndexId": "4:2014322154969818487",
+  "lastRelationId": "3:8506586501518462432",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    7036696209073524790,
+    4494770096057145177,
+    5470657763435006791,
+    8605881754107888921,
+    1145099586356278743,
+    8838081749321531417,
+    4209730880087821329,
+    3414012620668526501,
+    2852846252413328750
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}
